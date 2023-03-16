@@ -1,0 +1,125 @@
+/*
+Códigos de colores
+#24305E
+#374785
+#A8D0E6
+#F76C6C
+#F8E9A1*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*Header*/
+header{
+    background:#374785;
+    position:absolute;
+    top:0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header img{
+    width: 13%;
+
+}
+
+/* Navbar*/
+nav{
+    width: 70%;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* Componentes*/
+
+.banner img{
+    width: 100%;
+}
+.tituloNosotros{
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: #158ac5 ;
+}
+.tituloNosotros p{
+    margin:auto;
+    max-width: 70%;
+    font-size: 1.3rem;
+    font-style: italic;
+    text-align: center;
+}
+
+/*Card*/
+#servicios{
+    background-color: #A8D0E6;
+}
+#servicios h2{
+    text-align: center;
+    margin-top: 20px;
+}
+.cardServicios{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgb(255, 255, 255);
+    text-align: center; 
+    box-shadow: 2px 2px 15px rgb(172, 172, 172);
+    border-radius: 20px;
+    height: 200px;
+    width: 300px;
+    /*padding-top: 40px;*/
+    margin: 20px;
+} 
+.card h3 {
+    font-style: italic;
+}
+/*Margin es el espacio que hay entre los elementos continuos
+Padding es el espaciado interno*/
+
+/*Footer*/
+footer .redes, .enlaces a{
+    text-decoration: none;
+    color: black;
+}
+
+footer{
+    margin-top: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding:30px;
+    border-top: 2px solid black;
+}
+.redes ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    text-decoration: none;
+}
+
+#derechos{
+    text-align: center;
+}
