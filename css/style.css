@@ -62,15 +62,16 @@ header nav ul li a{
     font-size: 1.3rem;
     font-style: italic;
     text-align: center;
+    padding: 20px;
 }
 
 /*Card*/
 #servicios{
-    background-color: #A8D0E6;
+    background-color:white;
+    padding: 20px;
 }
 #servicios h2{
     text-align: center;
-    margin-top: 20px;
 }
 .cardServicios{
     margin-top: 40px;
@@ -97,6 +98,15 @@ header nav ul li a{
 .card h3 {
     font-style: italic;
 }
+
+.button{
+    text-decoration: none;
+    background-color: #24305E;
+    color: white;
+    padding: 8px 14px;
+    display: inline-block;
+    border-radius: 20px;
+}
 /*Margin es el espacio que hay entre los elementos continuos
 Padding es el espaciado interno*/
 
@@ -109,10 +119,34 @@ footer .redes, .enlaces a{
 footer{
     margin-top: auto;
     display: flex;
-    justify-content: space-evenly;
     padding:30px;
-    border-top: 2px solid black;
+    background-color:#158ac5;
 }
+footer ul{
+    list-style: none;
+}
+footer .footerColumns {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 0 20px;
+    margin-bottom: 50px;
+}
+
+footer .footerColumns .redes ul {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 100px;
+}
+
+footer .footerColumns h4 {
+    margin-bottom: 20px;
+}
+
+footer .footerColumns .redes img {
+    width: 45px;
+}
+
 .redes ul{
     display: flex;
     justify-content: space-evenly;
@@ -121,5 +155,17 @@ footer{
 }
 
 #derechos{
-    text-align: center;
+    padding: 30px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #24305E;
+    background-color:#158ac5;
+}
+.whatsappLink {
+    position: fixed;
+    width: 60px;
+    right: 25px;
+    bottom: 25px;
+    cursor: pointer;
 }
