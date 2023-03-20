@@ -43,7 +43,8 @@ nav ul{
 header nav ul li a{
     text-decoration: none;
     color: white;
-    font-size: 1.2rem;
+    font-size: clamp(10px,2vw,24px); /*Ancho de la pantalla*/
+    /*font-size:2vw;*/
 }
 
 /* Componentes*/
@@ -69,19 +70,22 @@ header nav ul li a{
 #servicios{
     background-color:white;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-#servicios h2{
-    text-align: center;
-}
+
+
 .cardServicios{
     margin-top: 40px;
-    display: flex;
     justify-content: space-evenly;
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+
+
 }
-
-
-
-.card {
+.cardServicios div{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -91,10 +95,12 @@ header nav ul li a{
     box-shadow: 2px 2px 15px rgb(172, 172, 172);
     border-radius: 20px;
     height: 200px;
-    width: 300px;
+
     /*padding-top: 40px;*/
     margin: 20px;
-} 
+}
+
+
 .card h3 {
     font-style: italic;
 }
@@ -149,7 +155,7 @@ footer .footerColumns .redes img {
 
 .redes ul{
     display: flex;
-    justify-content: space-evenly;
+    /*justify-content: space-evenly;*/
     width: 300px;
     text-decoration: none;
 }
